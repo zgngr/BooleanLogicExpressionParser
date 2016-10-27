@@ -24,6 +24,7 @@ namespace BooleanLogicParser.Tests
             return (tokens.First().GetType());
         }
 
+        [Test]
         public void CanParseComplexTokenStructure()
         {
             var tokens = new Tokenizer("!(True And False)").Tokenize();
